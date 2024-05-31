@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Term Finder Game</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div id="intro-page" class="intro-page">
+        <h1>Welcome to the STEM Term Finder Game</h1>
+        <div class="mode-selection">
+            <h2>Select Mode</h2>
+            <button class="mode-button" id="mode-bio">Bio</button>
+            <button class="mode-button" id="mode-chem">Chem</button>
+            <button class="mode-button" id="mode-physics">Physics</button>
+            <button class="mode-button" id="mode-all">Random</button>
+        </div>
+        <div class="time-selection">
+            <h2>Select Time Limit</h2>
+            <button class="time-button" id="time-2-30">2 mins</button>
+            <button class="time-button" id="time-5-00">5 mins</button>
+            <button class="time-button" id="time-10-00">10 mins</button>
+        </div>
+        <button id="start-game" class="start-button" disabled>Start Game</button>
+    </div>
+    
+    <div id="game-container" class="game-container" style="display: none;">
+        <h1 class="game-title">STEM Term Finder Game</h1>
+        <div class="top-section">
+            <div class="timer" id="timer">Time: 02:30</div>
+            <div class="scoreboard" id="scoreboard">Score: 0</div>
+        </div>
+        <div class="statement" id="statement">The statement will be displayed here</div>
+        <div class="word-boxes" id="word-boxes"></div>
+        <div class="keyboard" id="keyboard">
+            <!-- Keyboard letters will be added here by JavaScript -->
+        </div>
+        <button class="skip-button" id="skip-button">Skip</button>
+    </div>
+    
+    <div id="message-container" class="message-container" style="display: none;">
+        <div id="message" class="message"></div>
+        <div class="message-buttons">
+            <button id="play-again" class="message-button">Play Again</button>
+            <button id="exit" class="message-button">Exit</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
